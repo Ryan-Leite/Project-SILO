@@ -1,0 +1,305 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="FRRobot">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>5</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6c779f21-4383-11d0-8901-0020af68f0a3</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TPDevice">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>507d5c90-d605-11d2-8a27-00105ae42a68</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRIPControls">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>71060659-0e45-11d3-81b6-0000e206d650</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VWC3DObjects">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>00a1a957-c962-48eb-b6f9-7cfda79e6282</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="frLicenseChecker">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>15</VersionMinor>
+      <VersionMajor>14</VersionMajor>
+      <Guid>3e2eaab4-65b9-49e3-917a-e1d592331bab</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FROLUtils">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>7</VersionMajor>
+      <Guid>55374279-dcf7-492a-96b3-927feffc6260</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRRegistry">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>1</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>2e66e5b0-09f5-11d2-871c-00c04f98d092</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRAviRecord">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>0f07b390-4f27-4507-bbe7-2ab3acabf71f</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRCHARTLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>73b60447-9c8c-404c-93b5-bb2654646706</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRCHECKCOMBOBOXLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>a35736fd-9181-42be-be11-4ffdd816d61f</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="NEWPROGRESSBARLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>9101dcdd-0933-4465-81c4-a509a60aa34b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRGRIDEXLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>1561a8b8-3e04-11d4-a447-00aa002f1fe3</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="RGPERFTIMERLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>b82a3842-abd0-4937-9ba6-544c312d2780</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRMOTIONLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>0aaa4148-5c58-4c1f-b2f9-9e12234cfb60</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MPANIMATIONLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>95725290-c61b-4855-8539-5352c8f8c441</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRRNSelect">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>1</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>72aa3a9d-1ae4-4175-8bfc-3a096adf023d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRResource">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>549360a4-9efc-11d0-94d6-0020af68f0a3</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRRobotNeighborhood">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>0d889caf-f93b-486d-81b5-8b5473274e94</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRVirtual">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>12d9dd61-2a8a-11d4-9f27-00500409ff06</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Frwinutils">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>4c031ab5-f389-11d3-8a8b-00105ae42a68</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ZTCGFXLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>4</VersionMajor>
+      <Guid>bec079ef-f52d-11d3-881a-00c04f8f316d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRTPAppl">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>1</VersionMinor>
+      <VersionMajor>9</VersionMajor>
+      <Guid>cfd1f925-b47f-11d2-8780-00c04f943863</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SLTPAppl">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>5</VersionMajor>
+      <Guid>aaa64a61-d272-11d2-879b-00c04f943863</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PATPAppl">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>1</VersionMinor>
+      <VersionMajor>7</VersionMajor>
+      <Guid>7eb778a5-b6b4-11d2-8781-00c04f943863</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FRTPLine">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>27</VersionMajor>
+      <Guid>7460a97b-c019-11d1-86d0-00c04f98d092</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FVMatrix">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>9a6e7dd5-ca56-11d2-871d-00c04f8f317d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FVPosition">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>62205ea4-b537-11d2-8718-00c04f8f317d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FanucModuleExtensionsLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>be083aef-ed36-42e5-ba68-87b4758260b4</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FanucModuleExtensionsPlusLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6e41cd8a-50ce-4103-a014-0a263c278335</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="{e0d9f9d4-b826-4aa3-9c63-7106c599fe7c}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>39</VersionMinor>
+      <VersionMajor>4</VersionMajor>
+      <Guid>e0d9f9d4-b826-4aa3-9c63-7106c599fe7c</Guid>
+    </COMReference>
+    <COMReference Include="FSFTPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>1</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f90c3581-714a-40e6-8701-c824cb382a02</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\AForge.NET\Framework\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\AForge.NET\Framework\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\AForge.NET\Framework\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\AForge.NET\Framework\Release\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
